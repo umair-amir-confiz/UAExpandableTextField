@@ -21,6 +21,9 @@
 		80028D4E191A5BA3002A488A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80028D30191A5BA3002A488A /* UIKit.framework */; };
 		80028D56191A5BA3002A488A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80028D54191A5BA3002A488A /* InfoPlist.strings */; };
 		80028D58191A5BA3002A488A /* UAExpandableTextFieldExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D57191A5BA3002A488A /* UAExpandableTextFieldExampleTests.m */; };
+		80028D66191A6611002A488A /* UAExpandableTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D63191A6611002A488A /* UAExpandableTextField.m */; };
+		80028D67191A6611002A488A /* UATextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D65191A6611002A488A /* UATextView.m */; };
+		80028D6B191A6696002A488A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D6A191A6696002A488A /* UITextField+PlaceholderColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		80028D53191A5BA3002A488A /* UAExpandableTextFieldExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UAExpandableTextFieldExampleTests-Info.plist"; sourceTree = "<group>"; };
 		80028D55191A5BA3002A488A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80028D57191A5BA3002A488A /* UAExpandableTextFieldExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAExpandableTextFieldExampleTests.m; sourceTree = "<group>"; };
+		80028D62191A6611002A488A /* UAExpandableTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAExpandableTextField.h; sourceTree = "<group>"; };
+		80028D63191A6611002A488A /* UAExpandableTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAExpandableTextField.m; sourceTree = "<group>"; };
+		80028D64191A6611002A488A /* UATextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATextView.h; sourceTree = "<group>"; };
+		80028D65191A6611002A488A /* UATextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATextView.m; sourceTree = "<group>"; };
+		80028D69191A6696002A488A /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		80028D6A191A6696002A488A /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,8 @@
 		80028D32191A5BA3002A488A /* UAExpandableTextFieldExample */ = {
 			isa = PBXGroup;
 			children = (
+				80028D68191A6696002A488A /* UATextField */,
+				80028D61191A65DE002A488A /* UAExpandableTextField */,
 				80028D3B191A5BA3002A488A /* UAAppDelegate.h */,
 				80028D3C191A5BA3002A488A /* UAAppDelegate.m */,
 				80028D3E191A5BA3002A488A /* Main.storyboard */,
@@ -150,6 +161,26 @@
 				80028D54191A5BA3002A488A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80028D61191A65DE002A488A /* UAExpandableTextField */ = {
+			isa = PBXGroup;
+			children = (
+				80028D62191A6611002A488A /* UAExpandableTextField.h */,
+				80028D63191A6611002A488A /* UAExpandableTextField.m */,
+				80028D64191A6611002A488A /* UATextView.h */,
+				80028D65191A6611002A488A /* UATextView.m */,
+			);
+			path = UAExpandableTextField;
+			sourceTree = "<group>";
+		};
+		80028D68191A6696002A488A /* UATextField */ = {
+			isa = PBXGroup;
+			children = (
+				80028D69191A6696002A488A /* UITextField+PlaceholderColor.h */,
+				80028D6A191A6696002A488A /* UITextField+PlaceholderColor.m */,
+			);
+			path = UATextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +284,9 @@
 				80028D3D191A5BA3002A488A /* UAAppDelegate.m in Sources */,
 				80028D39191A5BA3002A488A /* main.m in Sources */,
 				80028D43191A5BA3002A488A /* UAViewController.m in Sources */,
+				80028D6B191A6696002A488A /* UITextField+PlaceholderColor.m in Sources */,
+				80028D66191A6611002A488A /* UAExpandableTextField.m in Sources */,
+				80028D67191A6611002A488A /* UATextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
