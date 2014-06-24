@@ -10,4 +10,11 @@
 
 @interface UAViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UILabel *label;
+
+-(IBAction)leftAlign:(id)sender;
+-(IBAction)centerAlign:(id)sender;
+-(IBAction)rightAlign:(id)sender;
+
+
 @end

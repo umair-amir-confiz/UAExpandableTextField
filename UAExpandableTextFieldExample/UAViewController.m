@@ -35,11 +35,33 @@
     [_expandableTextField setPlaceholder:@"Type Here..."];
     [_expandableTextField setTextColor:[UIColor redColor]];
     [_expandableTextField setDelegate:(id)self];
-    [_expandableTextField setTextAlignment:NSTextAlignmentRight];
+    [_expandableTextField setTextAlignment:NSTextAlignmentLeft];
     [_expandableTextField setBackgroundColor:[UIColor blackColor]];
     [_expandableTextField setMaxNumberOfLines:6];
     [_expandableTextField setFont:[UIFont fontWithName:@"Helvetica" size:19.0f]];
     [_expandableTextField setPlaceholderColor:[UIColor blueColor]];
+}
+
+
+-(IBAction)leftAlign:(id)sender
+{
+    self.label.textAlignment = NSTextAlignmentLeft;
+    self.label.text = @"Left Aligned Text";
+    [_expandableTextField setTextAlignment:NSTextAlignmentLeft];
+}
+
+-(IBAction)centerAlign:(id)sender
+{
+    self.label.textAlignment = NSTextAlignmentCenter;
+    self.label.text = @"Center Aligned Text";
+    [_expandableTextField setTextAlignment:NSTextAlignmentCenter];
+}
+
+-(IBAction)rightAlign:(id)sender
+{
+    self.label.textAlignment = NSTextAlignmentRight;
+    self.label.text = @"Right Aligned Text";
+    [_expandableTextField setTextAlignment:NSTextAlignmentRight];
 }
 
 @end
