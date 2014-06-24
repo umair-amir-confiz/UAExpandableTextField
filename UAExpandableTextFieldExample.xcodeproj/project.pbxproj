@@ -13,7 +13,6 @@
 		80028D37191A5BA3002A488A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80028D35191A5BA3002A488A /* InfoPlist.strings */; };
 		80028D39191A5BA3002A488A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D38191A5BA3002A488A /* main.m */; };
 		80028D3D191A5BA3002A488A /* UAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D3C191A5BA3002A488A /* UAAppDelegate.m */; };
-		80028D40191A5BA3002A488A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80028D3E191A5BA3002A488A /* Main.storyboard */; };
 		80028D43191A5BA3002A488A /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D42191A5BA3002A488A /* UAViewController.m */; };
 		80028D45191A5BA3002A488A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80028D44191A5BA3002A488A /* Images.xcassets */; };
 		80028D4C191A5BA3002A488A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80028D4B191A5BA3002A488A /* XCTest.framework */; };
@@ -24,6 +23,7 @@
 		80028D66191A6611002A488A /* UAExpandableTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D63191A6611002A488A /* UAExpandableTextField.m */; };
 		80028D67191A6611002A488A /* UATextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D65191A6611002A488A /* UATextView.m */; };
 		80028D6B191A6696002A488A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80028D6A191A6696002A488A /* UITextField+PlaceholderColor.m */; };
+		800F571D191CC74300A792C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800F571C191CC74300A792C6 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		80028D3A191A5BA3002A488A /* UAExpandableTextFieldExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UAExpandableTextFieldExample-Prefix.pch"; sourceTree = "<group>"; };
 		80028D3B191A5BA3002A488A /* UAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAAppDelegate.h; sourceTree = "<group>"; };
 		80028D3C191A5BA3002A488A /* UAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAAppDelegate.m; sourceTree = "<group>"; };
-		80028D3F191A5BA3002A488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80028D41191A5BA3002A488A /* UAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAViewController.h; sourceTree = "<group>"; };
 		80028D42191A5BA3002A488A /* UAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAViewController.m; sourceTree = "<group>"; };
 		80028D44191A5BA3002A488A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		80028D65191A6611002A488A /* UATextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATextView.m; sourceTree = "<group>"; };
 		80028D69191A6696002A488A /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
 		80028D6A191A6696002A488A /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
+		800F571C191CC74300A792C6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +125,11 @@
 				80028D61191A65DE002A488A /* UAExpandableTextField */,
 				80028D3B191A5BA3002A488A /* UAAppDelegate.h */,
 				80028D3C191A5BA3002A488A /* UAAppDelegate.m */,
-				80028D3E191A5BA3002A488A /* Main.storyboard */,
 				80028D41191A5BA3002A488A /* UAViewController.h */,
 				80028D42191A5BA3002A488A /* UAViewController.m */,
 				80028D44191A5BA3002A488A /* Images.xcassets */,
 				80028D33191A5BA3002A488A /* Supporting Files */,
+				800F571C191CC74300A792C6 /* Main.storyboard */,
 			);
 			path = UAExpandableTextFieldExample;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800F571D191CC74300A792C6 /* Main.storyboard in Resources */,
 				80028D45191A5BA3002A488A /* Images.xcassets in Resources */,
 				80028D37191A5BA3002A488A /* InfoPlist.strings in Resources */,
-				80028D40191A5BA3002A488A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +315,6 @@
 				80028D36191A5BA3002A488A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		80028D3E191A5BA3002A488A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80028D3F191A5BA3002A488A /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		80028D54191A5BA3002A488A /* InfoPlist.strings */ = {
@@ -414,6 +406,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UAExpandableTextFieldExample/UAExpandableTextFieldExample-Prefix.pch";
 				INFOPLIST_FILE = "UAExpandableTextFieldExample/UAExpandableTextFieldExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -491,6 +491,7 @@
 				80028D5D191A5BA3002A488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80028D5E191A5BA3002A488A /* Build configuration list for PBXNativeTarget "UAExpandableTextFieldExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				80028D60191A5BA3002A488A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

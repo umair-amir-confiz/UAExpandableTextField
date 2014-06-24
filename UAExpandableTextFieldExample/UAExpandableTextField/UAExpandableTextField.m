@@ -73,9 +73,9 @@
     r.origin.y = 0;
     r.origin.x = 0;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
-    internalTextView = [[HPTextViewInternal alloc] initWithFrame:r textContainer:textContainer];
+    internalTextView = [[UATextView alloc] initWithFrame:r textContainer:textContainer];
 #else
-    internalTextView = [[HPTextViewInternal alloc] initWithFrame:r];
+    internalTextView = [[UATextView alloc] initWithFrame:r];
 #endif
     internalTextView.delegate = self;
     internalTextView.scrollEnabled = NO;

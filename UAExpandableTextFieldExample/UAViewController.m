@@ -7,23 +7,39 @@
 //
 
 #import "UAViewController.h"
+#import "UAExpandableTextField.h"
 
 @interface UAViewController ()
+{
 
+}
+@property (nonatomic, readonly) IBOutlet UAExpandableTextField *expandableTextField;
 @end
 
 @implementation UAViewController
 
+@synthesize expandableTextField=_expandableTextField;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self setupExpandableTextField];
+	
 }
 
-- (void)didReceiveMemoryWarning
+-(void)setupExpandableTextField
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // setting expandable textview properties
+    [_expandableTextField becomeFirstResponder];
+    [_expandableTextField setPlaceholder:@"Type Here..."];
+    [_expandableTextField setTextColor:[UIColor redColor]];
+    [_expandableTextField setDelegate:(id)self];
+    [_expandableTextField setTextAlignment:NSTextAlignmentRight];
+    [_expandableTextField setBackgroundColor:[UIColor blackColor]];
+    [_expandableTextField setMaxNumberOfLines:6];
+    [_expandableTextField setFont:[UIFont fontWithName:@"Helvetica" size:19.0f]];
+    [_expandableTextField setPlaceholderColor:[UIColor blueColor]];
 }
 
 @end
